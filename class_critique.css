@@ -152,6 +152,40 @@ position: relative
 	margin-bottom: 100px;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
 }
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: right;
+  width: 300px;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+	text-align: right;
+	margin-left: 8px;
+	margin-right: 40px;
+	margin-bottom: -10px;
+}
+
+.column {
+	position: relative;
+	z-index: 4;
+	transition-duration: 0.2s;
+}
+
+.column:hover {
+	filter: drop-shadow(0 0 28px #ffffff);
+}
+
 .how2prepare {
 	width: 500px;
 	height: -200px; 
